@@ -5,7 +5,6 @@ let tentativas = 1;
 
 document.getElementById('reiniciar').setAttribute('disabled', true);
 limparCampo();
-console.log(numeroAleatorio);
 
 let inputDoNumero = document.getElementById('input');
 inputDoNumero.addEventListener('keydown', (event) =>{
