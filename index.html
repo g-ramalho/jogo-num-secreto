@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>Jogo do Nº Secreto</title>
 </head>
@@ -23,7 +23,7 @@
                     <h1></h1>
                     <p class="texto__paragrafo"></p>
                 </div>
-                <input type="number" min="1" max="10" class="container__input">
+                <input type="number" min="1" max="10" id="input" class="container__input">
                 <div class="chute container__botoes">
                     <button onclick="verificarChute()" id="chutar" class="container__botao">Chutar</button>
                     <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>

@@ -7,6 +7,17 @@ document.getElementById('reiniciar').setAttribute('disabled', true);
 limparCampo();
 console.log(numeroAleatorio);
 
+let inputDoNumero = document.getElementById('input');
+inputDoNumero.addEventListener('keydown', (event) =>{
+    if (event.key === 'Enter') {
+        if (!(document.getElementById('chutar').hasAttribute('disabled'))) {
+            verificarChute();
+        }else{
+            reiniciarJogo();
+        }
+    }
+})
+
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
